@@ -1,20 +1,5 @@
 module ShowSet
 
-# Show sets in a nice way using braces
-#
-# julia> A = IntSet(1,2,3,4)
-# IntSet(1, 2, 3, 4)
-#
-# julia> include("showset.jl")
-# (Various warnings print here)
-# show (generic function with 83 methods)
-#
-# julia> A
-# {1,2,3,4}
-#
-# julia> Set("alpha", "beta", "omega", "gamma")
-# {alpha,beta,gamma,omega}
-
 import Base.string, Base.show
 
 function set_to_string(A)
