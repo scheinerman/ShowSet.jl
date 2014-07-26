@@ -29,8 +29,8 @@ julia> Set(1, "hello", 4.5, 2+3im)
 
 Note
 ----
-A warning message follows `using ShowSet` that warns that `show(IO,Set{T})`
+Following `using ShowSet` Julia warns that the `show(IO,Set{T})`
 and `show(IO,IntSet)` methods have been overridden. Of course, that's exactly
 the point. 
 
-Please let me know if there's a way to supress these messages.
+Please let me know if there's a way to supress this warning.
