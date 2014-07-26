@@ -25,3 +25,5 @@ Note
 A warning message follows `using ShowSet` that warns that `show(IO,Set{T})`
 and `show(IO,IntSet)` methods have been overridden. Of course, that's exactly
 the point. 
+
+Please let me know if there's a way to supress these messages.
