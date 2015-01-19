@@ -38,7 +38,7 @@ julia> Set([1, "hello", 4.5, 2+3im])
 
 
 We extend the `string` function for `Set` and `IntSet` objects to
-facilitate their conversion into `ASCIIString`s. Some examples:
+provide for their conversion into `ASCIIString` objects. Some examples:
 
 ```julia
 julia> A = Set(["alpha", "beta", "gamma"]);
