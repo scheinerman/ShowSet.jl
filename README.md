@@ -12,7 +12,7 @@ like this:
 julia> IntSet(1,3,0)
 IntSet(0, 1, 3)
 
-julia> Set("One", "Two", "Three")
+julia> Set(["One", "Two", "Three"])
 Set{ASCIIString}("One","Two","Three")
 ```
 
@@ -21,7 +21,7 @@ However, after `using ShowSet` it looks like this:
 julia> IntSet(1,3,0)
 {0,1,3}
 
-julia> Set("One", "Two", "Three")
+julia> Set(["One", "Two", "Three"])
 {One,Three,Two}
 ```
 
@@ -30,7 +30,7 @@ unless Julia is unable to do so. In that case, the order of the
 objects is arbitrary.
 
 ```julia
-julia> Set(1, "hello", 4.5, 2+3im)
+julia> Set([1, "hello", 4.5, 2+3im])
 {hello,2 + 3im,4.5,1}
 ```
 
