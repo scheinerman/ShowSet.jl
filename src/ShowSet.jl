@@ -3,9 +3,9 @@
 
 module ShowSet
 
-import Base.string, Base.show
+import Base.string, Base.show, Base.string
 
-function set_to_string(A)
+function string_to_set(A)
     elements = collect(A)
     try
         sort!(elements)
@@ -22,7 +22,10 @@ function set_to_string(A)
     return output
 end
 
-show(io::IO, A::Set)    = print(io,set_to_string(A))
-show(io::IO, A::IntSet) = print(io,set_to_string(A))
+string(A::IntSet) = string_to_set(A)
+string(A::Set)    = string_to_set(A)
+
+show(io::IO, A::Set)    = print(io,string(A))
+show(io::IO, A::IntSet) = print(io,string(A))
 
 end # module ShowsSet
