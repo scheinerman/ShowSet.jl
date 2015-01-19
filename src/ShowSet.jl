@@ -5,7 +5,7 @@ module ShowSet
 
 import Base.string, Base.show, Base.string
 
-function string_to_set(A)
+function string(A::Union(Set,IntSet))
     elements = collect(A)
     try
         sort!(elements)
@@ -21,9 +21,6 @@ function string_to_set(A)
     output = output * "}"
     return output
 end
-
-string(A::IntSet) = string_to_set(A)
-string(A::Set)    = string_to_set(A)
 
 show(io::IO, A::Set)    = print(io,string(A))
 show(io::IO, A::IntSet) = print(io,string(A))
