@@ -3,7 +3,7 @@
 
 module ShowSet
 
-import Base.string, Base.show, Base.string
+import Base.string, Base.show
 
 function string(A::Union(Set,IntSet))
     elements = collect(A)
