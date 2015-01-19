@@ -41,6 +41,8 @@ We extend the `string` function for `Set` and `IntSet` objects to
 facilitate their conversion into `ASCIIString`s. Some examples:
 
 ```julia
+julia> A = Set(["alpha", "beta", "gamma"]);
+
 julia> string(A)
 "{alpha,beta,gamma}"
 
@@ -58,7 +60,7 @@ ASCIIString (constructor with 2 methods)
 
 + Following `using ShowSet` Julia warns that the `show(IO,Set{T})` and
   `show(IO,IntSet)` methods have been overridden. Of course, that's
-  exactly the point.  Please let me know if there's a way to supress
+  exactly the point.  Please let me know if there's a way to suppress
   this warning.
 
 + It would be useful if `Set` and `IntSet` were defined as subtypes of
