@@ -3,10 +3,23 @@
 
 module ShowSet
 
-import Base.string, Base.show
+import Base: start, done, next, string, show
 
-function string(A::Union(Set,IntSet))
-    elements = collect(A)
+export Pretty
+
+type Pretty{T<:Union(Set,IntSet)}
+    set::T
+end
+
+# Iterator protocol
+# IntSet and Set iterator definitions are called
+
+start(p::Pretty) = start(p.set)
+done(p::Pretty, state) = done(p.set, state)
+next(p::Pretty, i) = next(p.set, i)
+
+function string(p::Pretty)
+    elements = collect(p)
     try
         sort!(elements)
     end
@@ -22,7 +35,7 @@ function string(A::Union(Set,IntSet))
     return output
 end
 
-show(io::IO, A::Set)    = print(io,string(A))
-show(io::IO, A::IntSet) = print(io,string(A))
+show(io::IO, p::Pretty) = print(io,string(p))
+show(io::IO, p::Pretty) = print(io,string(p))
 
 end # module ShowsSet
