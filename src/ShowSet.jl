@@ -5,7 +5,9 @@ module ShowSet
 
 import Base.string, Base.show
 
-function string(A::Union{Set,IntSet})
+AbstractSet = Union{Set,IntSet}
+
+function string(A::AbstractSet)
     elements = collect(A)
     try
         sort!(elements)
