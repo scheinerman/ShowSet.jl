@@ -1,5 +1,12 @@
 # ShowSet
 
+
+[![Build Status](https://travis-ci.org/scheinerman/ShowSet.jl.svg?branch=master)](https://travis-ci.org/scheinerman/ShowSet.jl)
+
+[![Coverage Status](https://coveralls.io/repos/scheinerman/ShowSet.jl/badge.svg?branch=master&service=github)](https://coveralls.io/github/scheinerman/ShowSet.jl?branch=master)
+
+[![codecov.io](http://codecov.io/github/scheinerman/ShowSet.jl/coverage.svg?branch=master)](http://codecov.io/github/scheinerman/ShowSet.jl?branch=master)
+
 This module makes the printing of `Set` and `IntSet` objects in Julia
 nicer.
 
