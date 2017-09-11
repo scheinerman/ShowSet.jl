@@ -69,7 +69,3 @@ ASCIIString (constructor with 2 methods)
   `show(IO,IntSet)` methods have been overridden. Of course, that's
   exactly the point.  Please let me know if there's a way to suppress
   this warning.
-
-+ It would be useful if `Set` and `IntSet` were defined as subtypes of
-  a common `AbstractSet` type. That would simplify some of the code in
-  this module.

@@ -3,9 +3,8 @@
 
 module ShowSet
 
-import Base.string, Base.show
-
-AbstractSet = Union{Set,IntSet}
+import Base: string, show, AbstractSet
+# AbstractSet = Union{Set,IntSet}
 
 function string(A::AbstractSet)
     elements = collect(A)
