@@ -13,12 +13,12 @@ function string(A::AbstractSet)
     n = length(elements)
     output = "{"
     for k=1:n
-        output = output * string(elements[k])
+        output *= string(elements[k])
         if k<n
-            output = output * ","
+            output *= ","
         end
     end
-    output = output * "}"
+    output *= "}"
     return output
 end
 
