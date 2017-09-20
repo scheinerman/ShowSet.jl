@@ -10,16 +10,7 @@ function string(A::AbstractSet)
     try
         sort!(elements)
     end
-    n = length(elements)
-    output = "{"
-    for k=1:n
-        output *= string(elements[k])
-        if k<n
-            output *= ","
-        end
-    end
-    output *= "}"
-    return output
+    return "{" * join(elements,",") * "}"
 end
 
 show(io::IO, A::Set)    = print(io,string(A))
