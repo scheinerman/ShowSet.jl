@@ -1,4 +1,4 @@
-using Base.Test
+using Compat.Test
 using ShowSet
 
 A = IntSet([1,3,9])
