@@ -16,16 +16,16 @@ Without the use of this module, `Set` and `IntSet` objects display
 like this:
 
 ```julia
-julia> IntSet(1,3,0)
-IntSet(0, 1, 3)
+julia> BitSet([1,3,0])
+BitSet([1,3,0])
 
 julia> Set(["One", "Two", "Three"])
-Set{ASCIIString}("One","Two","Three")
+Set("One","Two","Three")
 ```
 
 However, after `using ShowSet` it looks like this:
 ```julia
-julia> IntSet(1,3,0)
+julia> BitSet([1,3,0])
 {0,1,3}
 
 julia> Set(["One", "Two", "Three"])
@@ -53,19 +53,11 @@ julia> A = Set(["alpha", "beta", "gamma"]);
 julia> string(A)
 "{alpha,beta,gamma}"
 
-julia> B = IntSet([5,3,1]);
+julia> B = BitSet([5,3,1]);
 
 julia> string(B)
 "{1,3,5}"
 
 julia> typeof(ans)
-ASCIIString (constructor with 2 methods)
+String
 ```
-
-
-## Notes
-
-+ Following `using ShowSet` Julia warns that the `show(IO,Set{T})` and
-  `show(IO,IntSet)` methods have been overridden. Of course, that's
-  exactly the point.  Please let me know if there's a way to suppress
-  this warning.
