@@ -15,6 +15,6 @@ function string(A::AbstractSet)
 end
 
 show(io::IO, A::Set)    = print(io,string(A))
-show(io::IO, A::IntSet) = print(io,string(A))
+show(io::IO, A::BitSet) = print(io,string(A))
 
 end # module ShowsSet
