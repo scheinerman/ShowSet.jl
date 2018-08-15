@@ -7,12 +7,12 @@
 
 [![codecov.io](http://codecov.io/github/scheinerman/ShowSet.jl/coverage.svg?branch=master)](http://codecov.io/github/scheinerman/ShowSet.jl?branch=master)
 
-This module makes the printing of `Set` and `IntSet` objects in Julia
+This module makes the printing of `Set` objects in Julia
 nicer.
 
 ## Usage
 
-Without the use of this module, `Set` and `IntSet` objects display
+Without the use of this module, `Set` and `BitSet` objects display
 like this:
 
 ```julia
@@ -44,8 +44,8 @@ julia> Set([1, "hello", 4.5, 2+3im])
 ## Conversion to `string`
 
 
-We extend the `string` function for `Set` and `IntSet` objects to
-provide for their conversion into `ASCIIString` objects. Some examples:
+We extend the `string` function for `Set` and `BitSet` objects to
+provide for their conversion into `String` objects. Some examples:
 
 ```julia
 julia> A = Set(["alpha", "beta", "gamma"]);
