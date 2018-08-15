@@ -9,6 +9,7 @@ function string(A::AbstractSet)
     elements = collect(A)
     try
         sort!(elements)
+    catch
     end
     return "{" * join(elements,",") * "}"
 end
