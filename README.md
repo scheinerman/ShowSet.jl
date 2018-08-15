@@ -12,8 +12,7 @@ nicer.
 
 ## Usage
 
-Without the use of this module, `Set` and `BitSet` objects display
-like this:
+Without the use of this module, `Set` objects display like this:
 
 ```julia
 julia> BitSet([1,3,0])
