@@ -4,6 +4,7 @@
 module ShowSet
 
 import Base: string, show, AbstractSet
+import Base.Multimedia.display
 
 function string(A::AbstractSet)
     elements = collect(A)
@@ -16,5 +17,7 @@ end
 
 show(io::IO, A::Set)    = print(io,string(A))
 show(io::IO, A::BitSet) = print(io,string(A))
+display(A::Set) = print(string(A))
+display(A::BitSet) = print(string(A))
 
 end # module ShowsSet
