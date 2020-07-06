@@ -58,7 +58,7 @@ julia> A
 We extend the `string` function for `Set` and `BitSet` objects to
 provide for their conversion into `String` objects. Some examples:
 
-```julia
+```
 julia> A = Set(["alpha", "beta", "gamma"]);
 
 julia> string(A)
