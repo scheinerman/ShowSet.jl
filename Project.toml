@@ -1,6 +1,6 @@
 name = "ShowSet"
 uuid = "fa774e86-460a-546b-b195-92e8193e3324"
-version = "0.2.2"
+version = "0.3.0"
 
 [compat]
 julia = "1"

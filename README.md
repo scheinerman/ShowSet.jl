@@ -1,9 +1,7 @@
 # ShowSet
 
-
 [![Build Status](https://travis-ci.org/scheinerman/ShowSet.jl.svg?branch=master)](https://travis-ci.org/scheinerman/ShowSet.jl)
 
-[![Coverage Status](https://coveralls.io/repos/scheinerman/ShowSet.jl/badge.svg?branch=master&service=github)](https://coveralls.io/github/scheinerman/ShowSet.jl?branch=master)
 
 [![codecov.io](http://codecov.io/github/scheinerman/ShowSet.jl/coverage.svg?branch=master)](http://codecov.io/github/scheinerman/ShowSet.jl?branch=master)
 
@@ -39,6 +37,20 @@ objects is arbitrary.
 julia> Set([1, "hello", 4.5, 2+3im])
 {hello,2 + 3im,4.5,1}
 ```
+
+## Representing the empty set
+
+By default, this module renders the empty set as `Ø` (LaTeX `\O`).
+This behavior can be changed with the `set_empty` function.
+```
+julia> A = Set()
+Ø
+julia> set_empty("{}");
+
+julia> A
+{}
+```
+
 
 ## Conversion to `string`
 

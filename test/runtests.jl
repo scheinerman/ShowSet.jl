@@ -8,3 +8,7 @@ B = Set{String}()
 push!(B,"Hello")
 push!(B,"Bye")
 @test "{Bye,Hello}" == string(B)
+
+set_empty("{}")
+Z = Set([])
+@test string(Z) == get_empty()
