@@ -12,7 +12,7 @@ nicer.
 
 Without the use of this module, `Set` objects display like this:
 
-```julia
+```
 julia> BitSet([1,3,0])
 BitSet([1,3,0])
 
@@ -21,7 +21,7 @@ Set("One","Two","Three")
 ```
 
 However, after `using ShowSet` it looks like this:
-```julia
+```
 julia> BitSet([1,3,0])
 {0,1,3}
 
@@ -33,7 +33,7 @@ The elements of the `Set` object are sorted into ascending order
 unless Julia is unable to do so. In that case, the order of the
 objects is arbitrary.
 
-```julia
+```
 julia> Set([1, "hello", 4.5, 2+3im])
 {hello,2 + 3im,4.5,1}
 ```
