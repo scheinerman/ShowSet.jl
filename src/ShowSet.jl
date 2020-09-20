@@ -33,7 +33,7 @@ function get_empty()::String
     return EMPTY_SET
 end
 
-function string(A::AbstractSet)
+function string(A::AbstractSet)::String
     elements = collect(A)
 
     if length(elements) == 0
@@ -43,6 +43,8 @@ function string(A::AbstractSet)
     try
         sort!(elements)
     catch
+        p = sortperm(hash.(elements))
+        elements = elements[p]
     end
     return "{" * join(elements,",") * "}"
 end

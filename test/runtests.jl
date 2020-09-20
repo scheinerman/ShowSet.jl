@@ -12,3 +12,7 @@ push!(B,"Bye")
 set_empty("{}")
 Z = Set([])
 @test string(Z) == get_empty()
+
+A = Set([-im, im])
+B = Set([im, -im])
+@test string(A) == string(B)
