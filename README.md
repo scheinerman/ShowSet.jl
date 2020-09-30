@@ -1,6 +1,6 @@
 # ShowSet
 
-[![Build Status](https://travis-ci.org/scheinerman/ShowSet.jl.svg?branch=master)](https://travis-ci.org/scheinerman/ShowSet.jl)
+[![Build Status](https://travis-ci.com/scheinerman/ShowSet.jl.svg?branch=master)](https://travis-ci.com/scheinerman/ShowSet.jl)
 
 
 [![codecov.io](http://codecov.io/github/scheinerman/ShowSet.jl/coverage.svg?branch=master)](http://codecov.io/github/scheinerman/ShowSet.jl?branch=master)
