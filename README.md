@@ -1,10 +1,7 @@
 # ShowSet
 
-[![Build Status](https://travis-ci.com/scheinerman/ShowSet.jl.svg?branch=master)](https://travis-ci.com/scheinerman/ShowSet.jl)
 
-
-This module makes the printing of `Set` objects in Julia
-nicer.
+This module makes the printing of `Set` objects in Julia nicer.
 
 ## Usage
 
