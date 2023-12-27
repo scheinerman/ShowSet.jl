@@ -1,7 +1,5 @@
-# Module written by Ed Scheinerman, ers@jhu.edu
-# distributed under terms of the MIT license
-
 module ShowSet
+__precompile__(false)
 
 import Base: string, show, AbstractSet
 import Base.Multimedia.display
