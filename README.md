@@ -67,3 +67,17 @@ julia> string(B)
 julia> typeof(ans)
 String
 ```
+
+## Warning message (safe to ignore)
+
+After `using ShowSet` (or `import ShowSet`) a message is reported:
+```
+julia> using ShowSet
+[ Info: Precompiling ShowSet [fa774e86-460a-546b-b195-92e8193e3324]
+[ Info: Disabled precompiling ShowSet [fa774e86-460a-546b-b195-92e8193e3324] since the text `__precompile__(false)` was found in file.
+┌ Info: Skipping precompilation due to precompilable error. Importing ShowSet [fa774e86-460a-546b-b195-92e8193e3324].
+└   exception = Error when precompiling module, potentially caused by a __precompile__(false) declaration in the module.
+```
+
+It is safe to ignore this. The issue stems from the fact that the functions `show` 
+and `display` (defined in `Base`) are overwritten in `ShowSet`.
