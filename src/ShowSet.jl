@@ -44,11 +44,11 @@ function string(A::AbstractSet)::String
         p = sortperm(hash.(elements))
         elements = elements[p]
     end
-    return "{" * join(elements,",") * "}"
+    return "{" * join(elements, ",") * "}"
 end
 
-show(io::IO, A::Set)    = print(io,string(A))
-show(io::IO, A::BitSet) = print(io,string(A))
+show(io::IO, A::Set) = print(io, string(A))
+show(io::IO, A::BitSet) = print(io, string(A))
 display(A::Set) = print(string(A))
 display(A::BitSet) = print(string(A))
 
